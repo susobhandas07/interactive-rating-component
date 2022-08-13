@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;    
+    font-size:15px;
+    font-family: 'Overpass', sans-serif;
+}
+body{
+    color:hsl(216, 12%, 54%);
+    background-color: hsl(216, 12%, 8%);
+}
+.container{
+    margin-top:12rem;
+    margin-left: auto;
+    margin-right:auto;
+    width:min(94%,400px);
+    height:auto;
+    padding:20px;
+    background-color: hsl(213, 19%, 14%);
+    border-radius:20px;
+}
+section[class="container-section"]{
+    margin-bottom: 30px;
+}
+.container-section:nth-child(4){
+    margin-bottom:0;
+}
+#svg-icon{
+    padding-left:13px;
+    padding-top:13px;
+}
+#icon-background{
+    background-color: hsl(216, 10%, 19%);
+    width:2.9rem;
+    height:2.9rem;
+    border-radius: 50%;
+}
+.container-section:nth-child(3){
+    margin-top: -17px;    
+    margin-bottom:37px;
+}
+h1{
+    font-size: 1.7em;
+    color:white;
+}
+ul{
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    padding-left:0;
+}
+.rating-point{
+    width:3.3rem;
+    height:3.3rem;
+	background-color: hsl(216, 10%, 19%);
+	border:none;
+    border-radius: 50%;
+    padding-top:0.2rem;
+    font-family: inherit;
+    color:hsl(216, 12%, 54%);
+}
+.submit{
+    margin-top:24px;
+    width:100%;
+    margin-right:30px;
+    height:40px;
+    background-color:hsl(25, 97%, 53%);
+    border-radius:60px;
+    border:none;
+    text-transform: uppercase;
+    color:white;
+    font-weight: 400;
+    font-size: 0.9em;
+    letter-spacing: 0.1rem;
+}
+.rating-point:focus{
+	background-color: hsl(217, 12%, 63%);
+}
+#thank-img{
+    text-align: center;
+}
+#selection{
+    text-align: center;
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(216, 10%, 19%);
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    padding-right:10px;
+    padding-left:10px;
+    width:-moz-fit-content;
+    width:fit-content;
+    margin-left: auto;
+    margin-right:auto;
+    border-radius: 15px;
+
+}
+#blank{
+    height:3.5px;
+    margin-bottom: -1px;
+}
+#thanks{
+    margin-top:30px;
+    margin-bottom:-15px;
+    text-align: center;
+}
+#thanks-para{
+    line-height: 27px;
+    text-align: center;
+}
+.hidden{
+    display:none;
+}
+@media(min-width:769px){
+    .container{        
+        margin-left: auto;
+        margin-right:auto;
+        padding:30px;        
+    }
+	.rating-point:hover{
+		cursor:pointer;
+		background-color: hsl(25, 97%, 53%);
+	}
+    .submit:hover{
+        cursor: pointer;
+        background-color: hsl(0,0%,100%);
+        color:hsl(25, 97%, 53%);
+    }
+}
